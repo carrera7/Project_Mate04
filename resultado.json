@@ -2,7 +2,31 @@
     "medias": {
         "radio_promedio": 14.127291739894552,
         "perimetro_promedio": 91.96903339191564,
-        "concavidad_promedio": 0.0887993158172232
+        "concavidad_promedio": 0.0887993158172232,
+        "area_promedio": 654.8891036906855
     },
-    "n_observaciones": 569
+    "n_observaciones": 569,
+    "coeficientes": {
+        "radio_promedio": {
+            "Sxx": 7053.946633571189,
+            "Sxy": 695506.576508787,
+            "beta_1": 98.59821921514512,
+            "beta_0": -738.0367041957466,
+            "media_y": 654.8891036906855
+        },
+        "perimetro_promedio": {
+            "Sxx": 335370.1923683655,
+            "Sxy": 4791518.6920070285,
+            "beta_1": 14.28725271667584,
+            "beta_0": -659.0957184880124,
+            "media_y": 654.8891036906855
+        },
+        "concavidad_promedio": {
+            "Sxx": 3.6097808074403397,
+            "Sxy": 10931.116733328068,
+            "beta_1": 3028.194041809208,
+            "beta_0": 385.98754461623605,
+            "media_y": 654.8891036906855
+        }
+    }
 }

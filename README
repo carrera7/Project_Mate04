@@ -3,5 +3,6 @@ Ejecucion en Orden
 2. new_csv.py
 3. calcular_medias.py
 4. calcular_coeficientes.py
+5. regresion_estimada.py
 
 Datos Obtenidos, se almacenan en resultados.json

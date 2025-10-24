@@ -1,12 +1,12 @@
 {
-    "metodo": "Regresión Lineal Múltiple - Descenso del Gradiente",
-    "coeficientes": {
-        "beta_0": 5.5339447143091954e-17,
-        "beta_1": 0.3066082717186982,
-        "beta_2": 0.7346410341636798,
-        "beta_3": -0.0594663983579873
-    },
-    "MSE": 0.0029667680396703176,
-    "R2": 0.9970332319603297,
-    "costo_final": 0.0014939824249960724
+  "metodo": "Regresión Lineal Múltiple - Descenso del Gradiente",
+  "coeficientes": {
+    "beta_0": 5.5339447143091954e-17,
+    "beta_1": 0.3066082717186982,
+    "beta_2": 0.7346410341636798,
+    "beta_3": -0.0594663983579873
+  },
+  "MSE": 0.0029667680396703176,
+  "R2": 0.9970332319603297,
+  "costo_final": 0.0014939824249960724
 }

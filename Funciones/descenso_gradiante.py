@@ -11,8 +11,8 @@ import json
 df = pd.read_csv("CSV/wdbc_selected.csv")
 
 # === 2. Definir variable dependiente (Y) e independientes (X) ===
-Y = df["area_promedio"].values
-X = df[["radio_promedio", "perimetro_promedio", "concavidad_promedio"]].values
+Y = df["radio_promedio"].values
+X = df[["area_promedio", "perimetro_promedio", "concavidad_promedio"]].values
 
 n = len(Y)  # número de observaciones
 

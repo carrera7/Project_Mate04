@@ -6,8 +6,8 @@ import seaborn as sns
 df = pd.read_csv("CSV/wdbc_selected.csv")
 
 # Variables
-respuesta = 'area_promedio'
-predictoras = ['radio_promedio', 'perimetro_promedio', 'concavidad_promedio']
+respuesta = 'radio_promedio'
+predictoras = ['area_promedio', 'perimetro_promedio', 'concavidad_promedio']
 
 # 1. Gráficos de dispersión individuales
 for col in predictoras:

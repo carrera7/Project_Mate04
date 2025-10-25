@@ -1,8 +1,109 @@
-Ejecucion en Orden 
-1. Crear_csv.py
-2. new_csv.py
-3. calcular_medias.py
-4. calcular_coeficientes.py
-5. regresion_estimada.py
+# 🧮 Proyecto: Regresión Lineal Múltiple - Métodos Estadísticos
 
-Datos Obtenidos, se almacenan en resultados.json
+Este proyecto forma parte del **Trabajo Práctico de Matemática IV (2025)** y tiene como objetivo implementar distintos métodos para **ajustar modelos de regresión lineal simple y múltiple** utilizando datos del conjunto **Wisconsin Diagnostic Breast Cancer (WDBC)**.
+
+Se aplican los métodos de:
+- **Mínimos cuadrados (OLS)**
+- **Descenso del gradiente**
+- **Análisis de correlación** y estimación de medias
+- **Visualización de relaciones lineales** entre variables
+
+---
+
+## 📦 Requisitos del sistema
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado **Python 3.8 o superior**.  
+Las librerías necesarias se encuentran en el archivo `requirements.txt`.
+
+### Instalación de dependencias
+
+Ejecuta el siguiente comando en la terminal dentro de la carpeta del proyecto:
+
+```bash
+pip install -r requirements.txt
+```
+
+Esto instalará automáticamente las librerías utilizadas, como `pandas`, `numpy`, `matplotlib`, y `json`.
+
+---
+
+## ⚙️ Ejecución del proyecto
+
+El proyecto se ejecuta en **orden secuencial**, ya que cada script genera datos que son utilizados por el siguiente.  
+A continuación, se detalla el flujo de ejecución:
+
+### 🔢 Orden de ejecución
+
+1️⃣ **`crear_csv.py`**  
+   - Carga el dataset original (WDBC).  
+   - Limpia y organiza las columnas necesarias.  
+   - Genera un archivo intermedio `wdbc_selected.csv`.
+
+2️⃣ **`new_csv.py`**  
+   - Crea nuevas variables o transforma las existentes.  
+   - Prepara los datos finales para análisis estadístico.
+
+3️⃣ **`calcular_medias.py`**  
+   - Calcula las medias y estadísticas descriptivas de las variables.  
+   - Genera resúmenes para inspección y validación de datos.
+
+4️⃣ **`calcular_coeficientes.py`**  
+   - Aplica fórmulas de regresión lineal (pendiente, intercepto, R²).  
+   - Permite verificar las relaciones entre variables antes del ajuste múltiple.
+
+5️⃣ **`regresion_estimada.py`**  
+   - Ejecuta el modelo de **Regresión Lineal Múltiple** mediante el método del **descenso del gradiente**.  
+   - Calcula los coeficientes finales del modelo y el error cuadrático medio (MSE).  
+   - Exporta los resultados a un archivo JSON.
+
+---
+
+## 💾 Resultados obtenidos
+
+Al finalizar la ejecución completa, los resultados del modelo se guardan automáticamente en:
+
+```
+resultados.json
+```
+
+Este archivo incluye:
+- Los coeficientes estimados (β₀, β₁, β₂, …)  
+- El costo final (error cuadrático medio)  
+- Información del método utilizado  
+
+Ejemplo de salida:
+
+```json
+{
+    "metodo": "Regresión Lineal Múltiple - Descenso del Gradiente",
+    "coeficientes": {
+        "beta_0": 0.0123,
+        "beta_1": 0.4567,
+        "beta_2": -0.0312,
+        "beta_3": 0.2174
+    },
+    "costo_final": 0.00452
+}
+```
+
+---
+
+## 📊 Visualización y análisis adicional
+
+El proyecto incluye scripts adicionales para generar gráficos y comparar métodos (OLS vs Gradiente).  
+Estos permiten observar la relación entre variables predictoras y la variable objetivo, así como la calidad del ajuste.
+
+---
+
+## 🧠 Autores
+Materia:
+Matematica 4
+
+Temas:
+Regresión Lineal Simple
+Regresión Lineal Múltiple 
+  
+Integrantes:
+Martínez Leandro Agustín                 Legajo: 18889/7
+Carrera Quinde Josue Franchesco 	Legajo: 17537/0
+Tomas Echeverria       		Legajo: 17293/9

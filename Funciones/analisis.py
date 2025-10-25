@@ -3,23 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# ===============================
-# Configuración
-# ===============================
+
 archivo_csv = "CSV/wdbc_full.csv"
 respuesta = "radio_promedio"  # variable respuesta
 
-# ===============================
-# Cargar datos
-# ===============================
 df = pd.read_csv(archivo_csv)
 
-# Selección de predictoras (como en tu ejemplo)
 predictoras = ["area_promedio", "perimetro_promedio", "radio_peor", "perimetro_peor"]
 
-# ===============================
-# Funciones auxiliares para regresión simple (sin sklearn)
-# ===============================
+
 def simple_linear_regression(x, y):
     """
     Calcula regresión lineal simple y devuelve:
@@ -73,9 +65,7 @@ def simple_linear_regression(x, y):
         "x_mean": x_mean, "y_mean": y_mean
     }
 
-# ===============================
-# Calcular regresiones manuales y mostrar pasos
-# ===============================
+
 results = {}
 
 for col in predictoras:
@@ -86,7 +76,6 @@ for col in predictoras:
     res = simple_linear_regression(x, y)
     results[col] = res
 
-    # Impresiones paso a paso
     print("\n" + "="*60)
     print(f"Predictor: {col}")
     print(f"N (observaciones): {res['n']}")
@@ -108,9 +97,7 @@ for col in predictoras:
         print(f"t-stat (b / se(b)) = {t_b:.6f}")
     print("="*60)
 
-# ===============================
-# Graficar: puntos y recta de regresión para cada predictor (en subplots)
-# ===============================
+
 n_preds = len(predictoras)
 cols = 2
 rows = int(np.ceil(n_preds / cols))

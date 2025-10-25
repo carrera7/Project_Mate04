@@ -30,7 +30,6 @@ def simple_linear_regression(x, y):
     Sxy = np.sum((x - x_mean) * (y - y_mean))          # Σ(x - x̄)(y - ȳ)
     Syy = np.sum((y - y_mean) ** 2)                    # Σ(y - ȳ)^2
 
-    # coeficientes
     b = Sxy / Sxx                                      # pendiente
     a = y_mean - b * x_mean                            # intercepto
 
